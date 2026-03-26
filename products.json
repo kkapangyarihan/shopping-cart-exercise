@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "code": "ult_small",
+      "name": "Unlimited 1GB",
+      "price": 24.90
+    },
+    {
+      "code": "ult_medium",
+      "name": "Unlimited 2GB",
+      "price": 29.90
+    },
+    {
+      "code": "ult_large",
+      "name": "Unlimited 5GB",
+      "price": 44.90
+    },
+    {
+      "code": "1gb",
+      "name": "1 GB Data-pack",
+      "price": 9.90
+    }
+  ],
+  "promos": {
+    "THREE_FOR_TWO": {
+      "type": "quantity",
+      "appliesTo": "ult_small",
+      "buy": 3,
+      "pay": 2
+    },
+    "BULK_DISCOUNT": {
+      "type": "bulk",
+      "appliesTo": "ult_large",
+      "minQty": 3,
+      "newPrice": 39.90
+    },
+    "BUNDLE_1GB": {
+      "type": "bundle",
+      "appliesTo": "ult_medium",
+      "freeItem": "1gb",
+      "quantityPerItem": 1
+    },
+    "I<3AMAYSIM": {
+      "type": "percentage",
+      "value": 0.10,
+      "appliesTo": "all"
+    }
+  }
+}
